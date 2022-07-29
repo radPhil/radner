@@ -43,7 +43,7 @@ h1 {
 }
 
 svg#radner {
-    width: 250px;
+    width: 280px;
     position: relative;
     filter: blur(5px);
     transform: translate3d(0, 0, 0);
