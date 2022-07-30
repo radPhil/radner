@@ -50,11 +50,7 @@ svg#radner {
     cursor: default;
 }
 
-@media only screen and (min-width: 768px) and (orientation: landscape) {
-    svg#radner {
-        width: 200px;
-    }
-}
+
 
 .c1 {
     fill: var(--color1);
@@ -66,8 +62,4 @@ svg#radner {
 
   svg#radner:hover {
     filter: none;
-}
-
-svg#radner:hover .cls-1 {
-    fill: var(--color2);
 }
