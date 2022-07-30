@@ -50,7 +50,11 @@ svg#radner {
     cursor: default;
 }
 
-
+@media only screen and (min-width: 768px) {
+    svg#radner {
+        width: 200px;
+    }
+}
 
 .c1 {
     fill: var(--color1);
