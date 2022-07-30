@@ -1,6 +1,6 @@
 :root {
-    --color1: #ffffff80;
-    --color2: #ffffff80;
+    --color1: #ffffff;
+    --color2: #ffffff;
 }
 
 * {
@@ -42,7 +42,7 @@ h1 {
 }
 
 svg#radner {
-    width: 33%;
+    width: 200px;
     position: relative;
     filter: blur(5px);
     transform: translate3d(0, 0, 0);
@@ -52,16 +52,18 @@ svg#radner {
 
 @media only screen and (min-width: 768px) {
     svg#radner {
-        width: 200px;
+        width: 250px;
     }
 }
 
 .c1 {
     fill: var(--color1);
+    opacity: 0.5;
   }
 
 .c2 {
     fill: var(--color2);
+    opacity: 0.4;
   }
 
   svg#radner:hover {
