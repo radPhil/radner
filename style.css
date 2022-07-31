@@ -55,12 +55,12 @@ svg#radner {
     }
 }
 
-.c1 {
+#c1 {
     fill: var(--color1);
     opacity: 0.5;
   }
 
-.c2 {
+#c2 {
     fill: var(--color2);
     opacity: 0.2;
   }
