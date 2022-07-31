@@ -49,7 +49,6 @@ svg#radner {
     transition: 0.5s;
     cursor: default;
 }
-
 @media only screen and (min-width: 768px) {
     svg#radner {
         width: 250px;
@@ -63,7 +62,7 @@ svg#radner {
 
 .c2 {
     fill: var(--color2);
-    opacity: 0.4;
+    opacity: 0.2;
   }
 
   svg#radner:hover {
