@@ -41,7 +41,7 @@ h1 {
   display: none;
 }
 
-svg#radner {
+svg#logo {
   width: 150px;
   position: relative;
   filter: blur(5px);
@@ -51,7 +51,7 @@ svg#radner {
 }
 
 @media only screen and (min-width: 769px) {
-  svg#radner {
+  svg#logo {
     width: 200px;
   }
 }
@@ -65,6 +65,6 @@ svg#radner {
   opacity: 0.2;
 }
 
-svg#radner:hover {
+svg#logo:hover {
   filter: none;
 }/*# sourceMappingURL=style.css.map */
