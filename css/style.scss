@@ -1,0 +1,70 @@
+:root {
+    --color1: #ffffff;
+    --color2: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background: linear-gradient(22deg, rgba(10, 10, 10, 1) 0%, rgba(38, 38, 38, 1) 100%);
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url("img/noise.jpg");
+    background-size: 600px 600px;
+    mix-blend-mode: multiply;
+    opacity: 1;
+}
+
+h1 {
+    display: none;
+}
+
+svg#radner {
+    width: 150px;
+    position: relative;
+    filter: blur(5px);
+    transform: translate3d(0, 0, 0);
+    transition: 0.5s;
+    cursor: default;
+}
+@media only screen and (min-width: 769px) {
+    svg#radner {
+        width: 200px;
+    }
+}
+
+.c1 {
+    fill: var(--color1);
+    opacity: 0.5;
+  }
+
+.c2 {
+    fill: var(--color2);
+    opacity: 0.2;
+  }
+
+  svg#radner:hover {
+    filter: none;
+}
