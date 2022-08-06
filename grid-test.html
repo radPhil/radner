@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Test</title>
+
+    <link rel="stylesheet"
+        href="https://www.intersport.at/on/demandware.static/Sites-IntersportAT-Site/-/de_AT/v1659711824549/css/intersport.css">
+</head>
+
+<body>
+
+    <div class="c31b">
+
+        <div class="c31b-img"
+            style="background-image: url('https://www.intersport.at/on/demandware.static/-/Library-Sites-IntersportAT-Shared/de_AT/dw20220970/content/landingpages/genesis-bikes/saison-2021/c31b-genesis-bikes-bekleidung.jpg')">
+        </div>
+
+        <div class="c31b-text">
+            <div class="text-wrapper">
+                <div class="icon-brand iconfont-brand-genesis"></div>
+                <h2 class="title">Bekleidung und Zubehör</h2>
+                <p class="basefont-large">Zum perfekten Bike brauchst du auch das passende
+                    Zubehör und funktionelle Kleidung, damit deiner nächsten Biketour nichts im Wege
+                    steht.</p>
+                <div class="buttons-wrapper">
+                    <a href="https://www.intersport.at/marken/genesis/kleidung/" class="btn-lined ">GENESIS
+                        Fahrradbekleidung</a>
+                    <a href="https://www.intersport.at/sportarten/bike/accessoires-und-ausrustung/genesis+trinkflaschen/"
+                        class="btn-lined ">GENESIS Zubehör</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .c31b {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .c31b-img {
+        padding-top: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;
+    }
+
+    .c31b-text {
+        padding: 30px;
+        background: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .c31b-text .title {
+        font-size: 2rem;
+    }
+
+    .c31b .buttons-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .btn-lined {
+        margin: 0;
+    }
+</style>

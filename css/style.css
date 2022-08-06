@@ -1,6 +1,8 @@
 :root {
-  --color1: #ffffff;
-  --color2: #ffffff;
+  --color-1: #ffffff;
+  --color-2: #ffffff;
+  --color-bg-1: #101010;
+  --color-bg-2: #050505;
 }
 
 * {
@@ -20,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  background: linear-gradient(45deg, #101010 50%, #050505 100%);
+  background: linear-gradient(45deg, var(--color-bg-1) 50%, var(--color-bg-2) 100%);
 }
 
 body::before {
@@ -57,12 +59,12 @@ h1 {
   }
 }
 .c1 {
-  fill: var(--color1);
+  fill: var(--color-1);
   opacity: 0.7;
 }
 
 .c2 {
-  fill: var(--color2);
+  fill: var(--color-2);
   opacity: 0.4;
 }
 
