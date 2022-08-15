@@ -1,0 +1,80 @@
+:root {
+  --color-1: hsl(0 0% 100%);
+  --color-2: hsl(0 0% 100%);
+  --color-bg-1: hsl(0 0% 15%);
+  --color-bg-2: hsl(0 0% 2%);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background: linear-gradient(45deg, var(--color-bg-1) 0, var(--color-bg-2) 100%);
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url("../img/noise.svg");
+  background-size: 300px 300px;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+
+h1 {
+  display: none;
+}
+
+#logo {
+  width: 150px;
+  will-change: filter;
+  filter: blur(5px);
+  transition: 0.5s;
+  cursor: default;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+#logo:hover {
+  filter: none;
+}
+#logo #radner {
+  fill: var(--color-1);
+  opacity: 0.7;
+}
+#logo #philipp {
+  fill: var(--color-2);
+  opacity: 0.4;
+}
+@media only screen and (min-width: 769px) {
+  #logo {
+    width: 200px;
+  }
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes introLoad {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
