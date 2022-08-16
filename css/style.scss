@@ -1,4 +1,4 @@
-@mixin devices($breakpoint) {
+@mixin mq($breakpoint) {
 
     @if $breakpoint==desktop {
         @media only screen and (min-width: 769px) {
@@ -64,7 +64,7 @@ h1 {
         opacity: 0.4;
     }
 
-    @include devices(desktop) {
+    @include mq(desktop) {
         width: 200px;
     }
 }
