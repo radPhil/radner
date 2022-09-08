@@ -35,10 +35,10 @@ h1 {
   width: 150px;
   will-change: filter;
   filter: blur(5px);
-  transition: filter 0.5s ease-out;
+  transition: 0.5s;
   cursor: default;
-  -webkit-animation: intro 2s forwards;
-          animation: intro 2s forwards;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
 }
 #logo:hover {
   filter: none;
@@ -57,7 +57,18 @@ h1 {
   }
 }
 
-@keyframes intro {
+@-webkit-keyframes introLoad {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes introLoad {
   from {
     transform: translateY(-40px);
     opacity: 0;
