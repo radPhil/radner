@@ -5,7 +5,8 @@
   --color-bg-2: hsl(0 0% 2%);
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -35,10 +36,8 @@ h1 {
   width: 150px;
   will-change: filter;
   filter: blur(5px);
-  transition: 0.5s;
+  transition: all 0.5s;
   cursor: default;
-  -webkit-animation: introLoad 2s forwards;
-          animation: introLoad 2s forwards;
 }
 #logo:hover {
   filter: none;
@@ -54,27 +53,5 @@ h1 {
 @media only screen and (min-width: 769px) {
   #logo {
     width: 200px;
-  }
-}
-
-@-webkit-keyframes introLoad {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes introLoad {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
