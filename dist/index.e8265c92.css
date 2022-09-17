@@ -1,0 +1,62 @@
+:root {
+  --color-1: #fff;
+  --color-2: #fff;
+  --color-bg-1: #262626;
+  --color-bg-2: #050505;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, var(--color-bg-1) 0, var(--color-bg-2) 100%);
+  place-content: center;
+  display: grid;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  background: url("noise.a9faf1c2.svg") 0 0 / 300px 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  display: none;
+}
+
+#logo {
+  width: 150px;
+  will-change: filter;
+  filter: blur(5px);
+  cursor: default;
+  transition: all .5s;
+}
+
+#logo:hover {
+  filter: none;
+}
+
+#logo #radner {
+  fill: var(--color-1);
+  opacity: .7;
+}
+
+#logo #philipp {
+  fill: var(--color-2);
+  opacity: .4;
+}
+
+@media (min-width: 50em) {
+  #logo {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=index.e8265c92.css.map */
