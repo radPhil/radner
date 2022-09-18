@@ -1,24 +1,15 @@
 {
   "name": "radner",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite src",
+    "build": "vite build src",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/radPhil/radner.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/radPhil/radner/issues"
-  },
-  "homepage": "https://github.com/radPhil/radner#readme",
   "devDependencies": {
-    "parcel": "^2.7.0",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "vite": "^3.1.0"
   }
 }

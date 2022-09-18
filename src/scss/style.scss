@@ -55,7 +55,7 @@ h1 {
 .logo {
 	width: clamp(10rem, 20vw, 13rem);
 	will-change: filter;
-	animation: intro 1.5s ease-out;
+	// animation: intro 1.5s ease-out;
 	transition: filter 0.2s ease-out;
 	filter: blur(5px);
 	cursor: default;
@@ -72,10 +72,10 @@ h1 {
 		fill: var(--color-2);
 	}
 
-	@keyframes intro {
-		from {
-			opacity: 0;
-			translate: 0 -30px;
-		}
-	}
+	// @keyframes intro {
+	// 	from {
+	// 		opacity: 0;
+	// 		translate: 0 -30px;
+	// 	}
+	// }
 }
