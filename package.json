@@ -11,5 +11,18 @@
   "devDependencies": {
     "sass": "^1.54.9",
     "vite": "^3.1.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radPhil/radner.design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radPhil/radner.design/issues"
+  },
+  "homepage": "https://github.com/radPhil/radner.design#readme",
+  "description": ""
 }
