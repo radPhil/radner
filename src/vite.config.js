@@ -2,6 +2,7 @@
 export default {
     build: {
         emptyOutDir: true,
-        outDir: '../dist'
+        outDir: '../dist',
+        base: '/radner.design/'
     }
 }
