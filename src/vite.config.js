@@ -3,6 +3,6 @@ export default {
 	build: {
 		emptyOutDir: true,
 		outDir: "../dist",
-		base: "/radner.design/",
+		base: "/<REPO>/",
 	},
 };
