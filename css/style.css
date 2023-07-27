@@ -31,19 +31,19 @@ h1 {
   display: none;
 }
 
-.logo {
+#logo {
   width: clamp(10rem, 20vw, 13rem);
   will-change: filter;
   transition: filter 0.2s ease-out;
   filter: blur(5px);
   cursor: default;
 }
-.logo:hover {
+#logo:hover {
   filter: none;
 }
-.logo #radner {
+#logo #radner {
   fill: var(--color-1);
 }
-.logo #philipp {
+#logo #philipp {
   fill: var(--color-2);
 }/*# sourceMappingURL=style.css.map */

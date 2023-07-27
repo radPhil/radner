@@ -47,7 +47,7 @@ h1 {
 	display: none;
 }
 
-.logo {
+#logo {
 	width: clamp(10rem, 20vw, 13rem);
 	will-change: filter;
 	transition: filter 0.2s ease-out;
