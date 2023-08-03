@@ -49,9 +49,9 @@ h1 {
 #logo {
 	width: clamp(10rem, 20vw, 13rem);
 	will-change: filter;
-	transition: all 0.5s ease-out;
-	filter: blur(20px);
-	opacity: 0.7;
+	transition: all 0.3s ease-out;
+	filter: blur(10px);
+	opacity: 0.4;
 
 	// &:hover {
 	// 	filter: none;
@@ -75,6 +75,6 @@ button {
 	&:hover #logo,
 	&:focus-visible #logo {
 		filter: none;
-		opacity: 0.5;
+		opacity: 0.4;
 	}
 }
