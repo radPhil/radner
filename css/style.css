@@ -29,7 +29,7 @@ h1 {
   will-change: filter;
   transition: all 0.3s ease-out;
   filter: blur(10px);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 #logo #radner {
   fill: var(--color-1);
@@ -45,6 +45,6 @@ button:focus-visible {
   outline: none;
 }
 button:hover #logo, button:focus-visible #logo {
-  filter: none;
-  opacity: 0.4;
+  filter: blur(0) drop-shadow(0 0 60px white) drop-shadow(0 0 40px white);
+  opacity: 0.9;
 }/*# sourceMappingURL=style.css.map */
