@@ -14,32 +14,18 @@ $breakpoints: (
 }
 
 :root {
-	--color-1: hsl(0 0% 100% / 1);
+	--color-1: #1d2727;
 	--color-2: hsl(0 0% 100% / 0.4);
-	--color-bg-1: #0d0d0d;
+	--color-bg-1: #b4ad9d;
 	--color-bg-2: #000000;
-}
-
-html {
-	--size: 5px;
-
-	--_c: #0000 75%, var(--color-bg-1) 0;
-	--_g1: conic-gradient(at 10% 50%, var(--_c));
-	--_g2: conic-gradient(at 50% 10%, var(--_c));
-	background: var(--_g1), var(--_g1) calc(1 * var(--size)) calc(3 * var(--size)),
-		var(--_g1) calc(2 * var(--size)) calc(1 * var(--size)),
-		var(--_g1) calc(3 * var(--size)) calc(4 * var(--size)),
-		var(--_g1) calc(4 * var(--size)) calc(2 * var(--size)), var(--_g2) 0 calc(4 * var(--size)),
-		var(--_g2) calc(1 * var(--size)) calc(2 * var(--size)), var(--_g2) calc(2 * var(--size)) 0,
-		var(--_g2) calc(3 * var(--size)) calc(3 * var(--size)),
-		var(--_g2) calc(4 * var(--size)) calc(1 * var(--size)), var(--color-bg-2);
-	background-size: calc(5 * var(--size)) calc(5 * var(--size));
 }
 
 body {
 	min-height: 100vh;
 	display: grid;
 	place-content: center;
+
+	background: var(--color-bg-1);
 }
 
 h1 {
@@ -51,7 +37,7 @@ h1 {
 	will-change: filter;
 	transition: all 0.3s ease-out;
 	filter: blur(10px);
-	opacity: 0.5;
+	opacity: 0.7;
 
 	#radner {
 		fill: var(--color-1);
@@ -70,7 +56,7 @@ button {
 
 	&:hover #logo,
 	&:focus-visible #logo {
-		filter: blur(0) drop-shadow(0 0 60px white) drop-shadow(0 0 40px white);
+		filter: blur(0);
 		opacity: 0.9;
 	}
 }
