@@ -1,7 +1,7 @@
 :root {
-  --color-1: hsl(0, 0%, 100%);
+  --color-1: hsl(42, 48%, 95%);
   --color-2: hsl(0 0% 100% / 0.4);
-  --color-bg-1: #222;
+  --color-bg-1: hsl(0, 0%, 13%);
   --color-bg-2: #000000;
 }
 
@@ -10,6 +10,7 @@ body {
   display: grid;
   place-content: center;
   background: var(--color-bg-1);
+  background-image: url(../assets/noise.png);
 }
 
 h1 {
@@ -38,5 +39,5 @@ button:focus-visible {
 }
 button:hover #logo, button:focus-visible #logo {
   filter: blur(0);
-  opacity: 0.6;
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
