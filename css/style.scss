@@ -14,9 +14,9 @@ $breakpoints: (
 }
 
 :root {
-	--color-1: #1d2727;
+	--color-1: hsl(0, 0%, 100%);
 	--color-2: hsl(0 0% 100% / 0.4);
-	--color-bg-1: #b4ad9d;
+	--color-bg-1: #222;
 	--color-bg-2: #000000;
 }
 
@@ -24,7 +24,6 @@ body {
 	min-height: 100vh;
 	display: grid;
 	place-content: center;
-
 	background: var(--color-bg-1);
 }
 
@@ -37,7 +36,7 @@ h1 {
 	will-change: filter;
 	transition: all 0.3s ease-out;
 	filter: blur(10px);
-	opacity: 0.7;
+	opacity: 1;
 
 	#radner {
 		fill: var(--color-1);
@@ -57,6 +56,6 @@ button {
 	&:hover #logo,
 	&:focus-visible #logo {
 		filter: blur(0);
-		opacity: 0.9;
+		opacity: 0.6;
 	}
 }
