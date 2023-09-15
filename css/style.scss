@@ -16,16 +16,24 @@ $breakpoints: (
 :root {
 	--color-1: hsl(42, 48%, 95%);
 	--color-2: hsl(0 0% 100% / 0.4);
-	--color-bg-1: hsl(0, 0%, 13%);
-	--color-bg-2: #000000;
+	--color-bg-1: hsl(0, 0%, 5%);
+	--color-bg-2: hsl(0, 0%, 15%);
 }
 
 body {
 	min-height: 100vh;
 	display: grid;
 	place-content: center;
-	background: var(--color-bg-1);
-	background-image: url(../assets/noise.png);
+	background: linear-gradient(45deg, var(--color-bg-1) 0%, var(--color-bg-2) 60%);
+
+	::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: url(../assets/noise.png);
+		background-size: 100px;
+		pointer-events: none;
+	}
 }
 
 h1 {
