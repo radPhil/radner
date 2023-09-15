@@ -1,5 +1,5 @@
 :root {
-  --color-1: hsl(42, 48%, 95%);
+  --color-1: hsl(35, 100%, 92%);
   --color-2: hsl(0 0% 100% / 0.4);
   --color-bg-1: hsl(0, 0%, 5%);
   --color-bg-2: hsl(0, 0%, 15%);
@@ -11,12 +11,12 @@ body {
   place-content: center;
   background: linear-gradient(45deg, var(--color-bg-1) 0%, var(--color-bg-2) 60%);
 }
-body ::after {
+body::after {
   content: "";
   position: absolute;
   inset: 0;
   background: url(../assets/noise.png);
-  background-size: 100px;
+  background-size: 150px;
   pointer-events: none;
 }
 
@@ -47,4 +47,5 @@ button:focus-visible {
 button:hover #logo, button:focus-visible #logo {
   filter: blur(0);
   opacity: 0.8;
+  animation: unset;
 }/*# sourceMappingURL=style.css.map */
