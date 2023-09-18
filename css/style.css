@@ -1,7 +1,6 @@
 :root {
-  --color-1: hsl(35, 100%, 92%);
-  --color-2: hsl(0 0% 100% / 0.4);
-  --color-bg: hsl(0, 0%, 15%);
+  --clr-primary: hsl(0, 0%, 15%);
+  --clr-secondary: hsl(35, 100%, 92%);
 }
 
 body {
@@ -9,7 +8,7 @@ body {
   height: 100vh;
   height: 100dvh;
   place-content: center;
-  background: var(--color-bg);
+  background: var(--clr-primary);
 }
 body::after {
   content: "";
@@ -33,7 +32,7 @@ h1 {
   opacity: 1;
 }
 #logo #radner {
-  fill: var(--color-1);
+  fill: var(--clr-secondary);
 }
 
 button {
