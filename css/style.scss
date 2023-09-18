@@ -16,8 +16,7 @@ $breakpoints: (
 :root {
 	--color-1: hsl(35, 100%, 92%);
 	--color-2: hsl(0 0% 100% / 0.4);
-	--color-bg-1: hsl(0, 0%, 15%);
-	--color-bg-2: hsl(0, 0%, 5%);
+	--color-bg: hsl(0, 0%, 15%);
 }
 
 body {
@@ -25,7 +24,7 @@ body {
 	height: 100vh;
 	height: 100dvh;
 	place-content: center;
-	background: var(--color-bg-1);
+	background: var(--color-bg);
 
 	&::after {
 		content: "";
