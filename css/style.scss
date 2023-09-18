@@ -22,6 +22,8 @@ $breakpoints: (
 
 body {
 	display: grid;
+	height: 100vh;
+	height: 100dvh;
 	place-content: center;
 	background: var(--color-bg-1);
 

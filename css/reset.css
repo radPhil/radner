@@ -27,8 +27,6 @@ html:focus-within {
 }
 
 body {
-  height: 100vh;
-  height: 100dvh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
