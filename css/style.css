@@ -27,7 +27,6 @@ h1 {
   width: clamp(10rem, 20vw, 13rem);
   will-change: filter;
   transition: all 0.3s ease-out;
-  filter: blur(10px);
   opacity: 1;
 }
 #logo #radner {
@@ -44,7 +43,7 @@ button:focus-visible {
   outline: none;
 }
 button:hover #logo, button:focus-visible #logo {
-  filter: blur(0);
+  filter: blur(10px);
   opacity: 0.8;
   animation: unset;
 }/*# sourceMappingURL=style.css.map */
